@@ -1,3 +1,4 @@
+-- counting weekly orders even though the dataset it self didn't contain every single day!
 SELECT
   date(dr.date)                                 AS week,
   COALESCE(SUM(daily_orders.Orders) , 0)        AS total_orders,
