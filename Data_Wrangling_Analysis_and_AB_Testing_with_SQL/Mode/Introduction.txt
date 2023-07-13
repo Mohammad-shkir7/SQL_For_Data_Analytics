@@ -1,0 +1,18 @@
+The following folder contains the code I wrote in the second module of 'SQL Basics For Data Sciencs Specialization'.
+I would like to mention some of key concipts I have gained completing this module successfully:
+1- Event tales- I knew that companies collect data about users' behavior on their sites, but I never thought of the way this data organized in database table.
+  The event table has number of attributes, such as: event_name, parameter_name, parameter_value, platform..etc
+    event_id                          event_time                  event_name   platform   parameter_name parameter_value
+    b9de71c5c3cc4cd7a97e50b832106e5a	2017-06-26 11:23:39	178481	view_item	    android	  item_id	        3526
+    23267713c9ea44419331731f50b6a8db	2017-06-27 10:46:39	178481	view_item	    android	  item_id	        1514
+    1b7822fa7b854e01970218ae8f721fe0	2017-06-27 11:15:39	178481	view_item	    android	  item_id	        3712
+    b9de71c5c3cc4cd7a97e50b832106e5a	2017-06-26 11:23:39	178481	view_item	    android	  referrer	      home
+    23267713c9ea44419331731f50b6a8db	2017-06-27 10:46:39	178481	view_item	    android	  referrer	      home
+    1b7822fa7b854e01970218ae8f721fe0	2017-06-27 11:15:39	178481	view_item	    android	  referrer	      home
+
+  Creating a new table for view_item event and organizing it:
+    event_id                          event_time                  platform   item_id  referrer    
+    006c666736f54de9b3d4b6f93f8da0ab	2015-03-23 13:17:10	43967	  android	    2967    home
+    0077cb95180f405aaa2de2c57a5def56	2014-03-05 08:01:59	14447	  android	    2173	  home
+    005a3771f44f4dd2850d58faa23b59ec	2018-03-13 21:22:56	243851	android	    2217	  item_page
+    006bb00296bf4e86bfcef08982575e0f	2017-09-10 04:30:15	202271	android	    3402	  item_page
