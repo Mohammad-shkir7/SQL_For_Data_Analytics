@@ -26,4 +26,8 @@ which change would encourage people to pay more?
 
 3- Max function- Additional usage- as shown at the first point (view_item_event table), we were able to transform 
 {item_id and referrer} to seperate columns without empty values or weird looking table thanks to MAX function.
-  - For more details check the file named 
+  - For more details check the file named '1.1flexible_data_WithoutUsingMAX.sql'
+
+4- Replacing some values with 0 or 1- Sometimes we should replace boolean values or columns which contains two 
+values only. Tables that contain 0 or 1 called binary tables.
+  - Binary tables are used in Machine Learning and Statistics.
