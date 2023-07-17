@@ -16,3 +16,14 @@ I would like to mention some of key concipts I have gained completing this modul
     0077cb95180f405aaa2de2c57a5def56	2014-03-05 08:01:59	14447	  android	    2173	  home
     005a3771f44f4dd2850d58faa23b59ec	2018-03-13 21:22:56	243851	android	    2217	  item_page
     006bb00296bf4e86bfcef08982575e0f	2017-09-10 04:30:15	202271	android	    3402	  item_page
+
+2- A/B testing- It's a statistics-data based method which calculates the success rate on a factor/factors 
+that data scientst applied, basically it answers the question: what the users would prefer? /
+which change would encourage people to pay more?
+  - To calculate p-value and improvement, we have to have devide our desired population to two groups (control and treatment),
+  then we need 4 inputs (sample size for each group, number of success for each group).
+  Filling these values into this site ->> 'https://thumbtack.github.io/abba/demo/abba.html' will give the answers.
+
+3- Max function- Additional usage- as shown at the first point (view_item_event table), we were able to transform 
+{item_id and referrer} to seperate columns without empty values or weird looking table thanks to MAX function.
+  - For more details check the file named 
